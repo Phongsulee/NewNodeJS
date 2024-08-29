@@ -9,4 +9,8 @@ router.get('/list', (req, res) => {
   res.render('list');
 });
 
+router.get('/test', (req, res) => {
+  res.render('test');
+});
+
 module.exports = router;
