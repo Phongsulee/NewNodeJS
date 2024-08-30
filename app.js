@@ -11,7 +11,7 @@ app.set('views', './views'); // Set the views directory
 app.use(morgan('dev')); // Use Morgan for logging HTTP requests
 
 // Serve static files from the 'asset' directory
-app.use(express.static(path.join(__dirname, 'asset')));
+app.use(express.static(path.join(__dirname, '/asset/')));
 
 // Use the defined routes
 app.use('/', routes);
